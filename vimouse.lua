@@ -47,6 +47,7 @@ return function(tmod, tkey)
     if clicks > 3 then
       clicks = 3
     end
+    e:setFlags(modkeys)
     e:setProperty(eventPropTypes.mouseEventClickState, clicks)
     e:post()
   end
