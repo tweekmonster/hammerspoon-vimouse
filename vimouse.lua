@@ -171,6 +171,7 @@ return function(tmod, tkey)
           postEvent(eventTypes.leftMouseDragged, coords, flags, 0)
         else
           hs.mouse.setAbsolutePosition(coords)
+          postEvent(eventTypes.mouseMoved, coords, flags, 0)
         end
       end
     end
